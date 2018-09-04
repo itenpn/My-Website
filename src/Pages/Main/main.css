@@ -1,0 +1,70 @@
+@keyframes appear{
+    0% {opacity: 0};
+    10% {opacity: .1};
+    30% {opacity: .2};
+    50% {opacity: .4};
+    70% {opacity: .6};
+    80% {opacity: .8};
+    90% {opacity: .9};
+    100% {opacity: 1};
+}
+@keyframes float{
+    from{
+        margin-right: 45%;
+        margin-left: 0%;
+        transform: rotate(10deg);
+    }
+
+    to{
+        margin-right: 0%;
+        margin-left: 45%;
+        transform: rotate(-10deg);
+    }
+}
+body{
+    animation-name: appear;
+    animation-duration: 10s;
+}
+.Logo{
+    animation-name: float;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;    
+    font-size: 50px;
+    font-family: 'Jua', sans-serif;
+    font-weight: 100;
+    padding-bottom: 0px;
+    padding-top: 0;
+    text-align: center;    
+    color: white;
+    width: 600px;
+}
+
+.Links{
+    display: inline-block;
+    width: 100%;
+    font-family: 'Jua', sans-serif;
+    text-align: center;
+    position: fixed;
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+img{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+
+table{
+    padding-left:20%;
+}
+
+td{
+    padding-right: 50px;
+    padding-left: 50px;
+}
